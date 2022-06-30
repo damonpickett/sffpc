@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
-import { ethers, BigNumber } from 'ethers';
 
 function Poster(props) {
 
-    const [mintAmount, setMintAmount] = useState(1);
+    // const isConnected = Boolean(props.accounts[0]);
 
     const handleDecrement = () => {
-        if (mintAmount <= 1) return;
-        setMintAmount(mintAmount - 1);
+        if (props.mintAmount <= 1) return;
+        props.setMintAmount(props.mintAmount - 1);
     };
 
     const handleIncrement = () => {
-        if (mintAmount >= 3) return;
-        setMintAmount(mintAmount + 1);
+        if (props.mintAmount >= 3) return;
+        props.setMintAmount(props.mintAmount + 1);
     };
 
     return (
@@ -25,12 +24,12 @@ function Poster(props) {
                     className='incdec'
                     onClick={handleDecrement}
                     >-</button>
-                <input type='number' value={mintAmount}></input>
+                <input type='number' value={props.mintAmount}></input>
                 <button 
                     className='incdec'
                     onClick={handleIncrement}
                     >+</button>
-                <button className='mint-button'>Mint</button>
+                <button onClick={props.onClick}className='mint-button'>Mint</button>
             </div>
         </div>
     )

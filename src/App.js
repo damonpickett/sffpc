@@ -16,7 +16,7 @@ function App() {
       <div className="App">
         <Header accounts={accounts} setAccounts={setAccounts} />
         <Routes>
-          <Route path='/' element={<Minter />}/>
+          <Route path='/' element={<Minter accounts={accounts} setAccounts={setAccounts} />}/>
           <Route path='/about' element={<About />}/>
         </Routes>
         <Footer />

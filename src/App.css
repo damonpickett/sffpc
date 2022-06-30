@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 /* font-family: 'Orbitron', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'VT323', monospace; */
 
 .App {
   text-align: center;
   color: #53B804;
   z-index: 1;
+  background-color: rgb(22, 21, 21);
+  margin: 0;
 }
 
-.background {
+/* .background {
   z-index: -1;
   position: absolute;
   top: 0;
@@ -16,9 +22,144 @@
   bottom: 0;
   background-image: url('./images/space-bg-1920x1248.png');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-attachment: fixed;
   background-position: 40% 40%;
+} */
+
+.links {
+  font-family: 'Montserrat', sans-serif;
+  color: #53B804;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+/* HEADER */
+
+.header {
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 25px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.home {
+  text-decoration: none;
+  color: #53B804;
+}
+
+.header button {
+  display: block;
+  margin: 20px auto;
+  background-color: #53B804;
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 1.8em;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  height: 50px;
+  text-shadow: 0 2px 2px #000000;
+}
+
+.header p {
+  font-size: 1.5em;
+}
+
+/* MINTER */
+
+.minter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+/* POSTER */
+
+.poster {
+  background-color: white;
+  width: 350px;
+  height: 525px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+}
+
+.controls {
+  display: block;
+  
+}
+
+input {
+  text-align: center;
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.mint-button {
+  display: block;
+  margin: 15px auto;
+  background-color: #53B804;
+  border: none;
+  border-radius: 5px;
+  width: 70px;
+  height: 35px;
+  font-family: 'VT323', monospace;
+  color: white;
+  text-shadow: 0 2px 2px #000000;
+  font-size: 1.2em;
+}
+
+.incdec {
+  background-color: #53B804;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.controls input {
+  margin: 0 10px;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  font-family: 'VT323', monospace;
+}
+
+/* FOOTER */
+
+.footer {
+  margin: 0;
+  margin: 75px 0 0;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
+
+.social a {
+  text-decoration: none;
+  color: #53B804;
+}
+
+i {
+  font-size: 50px;
 }
 
 

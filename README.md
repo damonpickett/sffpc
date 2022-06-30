@@ -44,5 +44,7 @@ function tokenURI(uint256 tokenId_) public view override returns (string memory)
 0x7Fc49f926509Df6deFcDbBd992141D1394FA5F45
 
 Alien Contract Winner: 0x2AD4344563f9eA73a89B1d3665058c185a781CB6
+SOP: 0x244D105ecb52713B1cB971db7589d617D8FEb5f3
+Robo: 0x20822036dDC00eaE0cA917897E0bbFb8a01c29F7
 
 OpenSea reads metadata from tokenURI function. THe base uri needs to be for a folder with numbered files. The assigned token ID added to the base uri ends matching the filename. The tutorial for full-mint-website had me adding .json to my uri but I think this is probably unecessary when using ipfs.

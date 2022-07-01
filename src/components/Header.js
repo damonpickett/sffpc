@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Header({ accounts, setAccounts }) {
+function Header({ accounts, setAccounts, modal, setModal }) {
 
     const isConnected = Boolean(accounts[0]);
 
@@ -16,17 +16,20 @@ function Header({ accounts, setAccounts }) {
 
     return (
         <div className='header'>
-            <Link className='home' to='/'><h1>Sci-Fi Film Poster Club</h1></Link>
-            <Link className='links' to="/about">About</Link>
-            <button >Instructions</button>
-            {isConnected ? (
-            <p>Wallet Connected</p>
-            ) : (
-                <button
-                onClick={connectAccount}
-                >Connect Wallet</button>
-            )}
-            
+            <nav>
+                <Link className='home' to='/'><h1>Sci-Fi Film Poster Club</h1></Link>
+                <Link className='about-link' to="/about">About</Link>
+            </nav>
+            <div className='header-buttons'>
+                <button onClick={() => {setModal(true)}}>Instructions</button>
+                {isConnected ? (
+                <p>Wallet Connected</p>
+                ) : (
+                    <button
+                    onClick={connectAccount}
+                    >Connect Wallet</button>
+                )}
+            </div>
         </div>
     )
 

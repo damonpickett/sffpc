@@ -12,7 +12,7 @@ const alienAddress = '0x2AD4344563f9eA73a89B1d3665058c185a781CB6'
 const robocopAddress = '0x20822036dDC00eaE0cA917897E0bbFb8a01c29F7'
 const spaceOdysseyAddress = '0x244D105ecb52713B1cB971db7589d617D8FEb5f3'
 
-function Minter(props) {
+function Minter({ accounts, setAccounts }) {
 
     const [mintAmount, setMintAmount] = useState(1);
 
@@ -83,18 +83,24 @@ function Minter(props) {
                 onClick={handleSpaceOdysseyMint} 
                 mintAmount={mintAmount}
                 setMintAmount={setMintAmount}
+                accounts={accounts} 
+                setAccounts={setAccounts}
                 />
             <Poster 
                 src={alien}
                 onClick={handleAlienMint}
                 mintAmount={mintAmount}
                 setMintAmount={setMintAmount}
+                accounts={accounts} 
+                setAccounts={setAccounts}
                 />
             <Poster 
                 src={robocop}
                 onClick={handleRobocopMint}
                 mintAmount={mintAmount}
                 setMintAmount={setMintAmount}
+                accounts={accounts} 
+                setAccounts={setAccounts}
                 />
         </div>
     )

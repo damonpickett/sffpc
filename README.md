@@ -48,3 +48,9 @@ SOP: 0x244D105ecb52713B1cB971db7589d617D8FEb5f3
 Robo: 0x20822036dDC00eaE0cA917897E0bbFb8a01c29F7
 
 OpenSea reads metadata from tokenURI function. THe base uri needs to be for a folder with numbered files. The assigned token ID added to the base uri ends matching the filename. The tutorial for full-mint-website had me adding .json to my uri but I think this is probably unecessary when using ipfs.
+
+links for about page:
+
+portfolio
+opensea testnet
+portfolio

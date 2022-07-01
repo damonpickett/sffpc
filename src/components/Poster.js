@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function Poster(props) {
 
-    // const isConnected = Boolean(props.accounts[0]);
+    const isConnected = Boolean(props.accounts[0]);
 
     const handleDecrement = () => {
         if (props.mintAmount <= 1) return;
@@ -29,7 +29,11 @@ function Poster(props) {
                     className='incdec'
                     onClick={handleIncrement}
                     >+</button>
+                {isConnected ? (
                 <button onClick={props.onClick}className='mint-button'>Mint</button>
+                ) : (
+                    <p>Connect your wallet to mint</p>
+                )}
             </div>
         </div>
     )

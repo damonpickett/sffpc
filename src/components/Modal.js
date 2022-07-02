@@ -15,11 +15,11 @@ const Modal = (props) => {
                     <h3>Instructions</h3>
                  </div>
                 <div className="modal-body">
-                    <p>Connect your Ethereum wallet via the 'Connect Wallet' button</p>
-                    <p>Connect your wallet to the Rinkeby Testnet</p>
-                    <p>You'll need RinkebyETH tokens to interact with the blockchain. You can collect RinkebyETH from the <a href='https://rinkebyfaucet.com/' target='_blank' rel='noreferrer'>Rinkeby Faucet</a></p>
-                    <p>Once your wallet is connected you'll be able to choose the number of tokens you'd like to mint. The maximum is 3</p>
-                    <p>Click the 'Mint' button to purchase an NFT. You can verify your transaction via your wallet address' transaction history on the <a href='https://rinkeby.etherscan.io/' target='_blank' rel='noreferrer'>Rinkeby Testnet</a></p>
+                    <p>Connect your Ethereum wallet via the 'Connect Wallet' button.</p>
+                    <p>Connect your wallet to the Rinkeby Testnet.</p>
+                    <p>You'll need RinkebyETH tokens to interact with the blockchain. You can collect RinkebyETH from the <a href='https://rinkebyfaucet.com/' target='_blank' rel='noreferrer'>Rinkeby Faucet</a>.</p>
+                    <p>Once your wallet is connected you'll be able to choose the number of tokens you'd like to mint. The maximum is 3.</p>
+                    <p>Click the 'Mint' button to purchase an NFT. You can verify your transaction via your wallet address' transaction history on the <a href='https://rinkeby.etherscan.io/' target='_blank' rel='noreferrer'>Rinkeby Testnet</a>.</p>
                 </div>
                 <div className="modal-header">
                     <h3>Further Info</h3>

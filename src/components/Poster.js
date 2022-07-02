@@ -21,16 +21,16 @@ function Poster(props) {
             </div>
             <div className='controls'>
                 <button 
-                    className='incdec'
+                    className='incdec ripple'
                     onClick={handleDecrement}
                     >-</button>
                 <input type='number' value={props.mintAmount}></input>
                 <button 
-                    className='incdec'
+                    className='incdec ripple'
                     onClick={handleIncrement}
                     >+</button>
                 {isConnected ? (
-                <button onClick={props.onClick}className='mint-button'>Mint</button>
+                <button onClick={props.onClick}className='mint-button ripple'>Mint</button>
                 ) : (
                     <p>Connect your wallet to mint</p>
                 )}

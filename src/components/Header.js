@@ -21,11 +21,12 @@ function Header({ accounts, setAccounts, modal, setModal }) {
                 <Link className='nav-link' to="/about">About</Link>
             </nav>
             <div className='header-buttons'>
-                <button onClick={() => {setModal(true)}}>Instructions</button>
+                <button className='ripple' onClick={() => {setModal(true)}}>Instructions</button>
                 {isConnected ? (
                 <p>Wallet Connected</p>
                 ) : (
                     <button
+                    className='ripple'
                     onClick={connectAccount}
                     >Connect Wallet</button>
                 )}

@@ -37,10 +37,10 @@
 .home {
   text-decoration: none;
   color: #53B804;
+  transition: 0.4s;
 }
 
-.header button {
-  display: block;
+.header-buttons button {
   margin: 20px auto;
   background-color: #53B804;
   color: white;
@@ -51,12 +51,26 @@
   width: 250px;
   height: 50px;
   text-shadow: 0 2px 2px #000000;
-  transition-duration: 0.4s;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
-.header button {
-  
+.ripple {
+  background-position: center;
+  transition: background 0.4s;
+}
+
+.ripple:hover {
+  background-color: #55ea69;
+  background-image: radial-gradient(circle, transparent 1%, #55ea69 1%);
+  background-position: center;
+  background-size: 15000%;
+}
+
+.ripple:active {
+  transition: background 0s;
+  background-color: #d7f4db;
+  background-size: 100%;
 }
 
 .header p {
@@ -84,6 +98,11 @@
 .about-links {
   text-decoration: none;
   color: aqua;
+  transition: 0.4s;
+}
+
+.about-links:hover {
+  color:rgb(250, 46, 253)
 }
 
 /* MODAL */
@@ -99,6 +118,7 @@
   align-items: center;
   justify-content: center;
   z-index: 100;
+  transition-duration: 4s;
 }
 
 .modal-canvas {
@@ -184,6 +204,7 @@ input {
   color: white;
   text-shadow: 0 2px 2px #000000;
   font-size: 1.2em;
+  text-transform: uppercase;
 }
 
 .nft p {
@@ -228,6 +249,7 @@ input {
 .social a {
   text-decoration: none;
   color: #53B804;
+  transition: color 0.4s;
 }
 
 i {
@@ -256,6 +278,11 @@ i {
   .nav-link {
     position: absolute;
     right: 100px;
+    transition: color 0.4s;
+  }
+
+  .nav-link:hover, .social a:hover, .home:hover {
+    color: #55ea69;
   }
 
   .header-buttons button, .header-buttons p {

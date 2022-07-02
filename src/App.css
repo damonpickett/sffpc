@@ -13,7 +13,7 @@
   margin: 0;
 }
 
-.links, .about-link {
+.nav-link {
   font-family: 'Montserrat', sans-serif;
   color: #53B804;
   text-decoration: none;
@@ -51,6 +51,12 @@
   width: 250px;
   height: 50px;
   text-shadow: 0 2px 2px #000000;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.header button {
+  
 }
 
 .header p {
@@ -73,6 +79,11 @@
   text-align: left;
   padding: 0 30px;
   font-size: 1.5em;
+}
+
+.about-links {
+  text-decoration: none;
+  color: aqua;
 }
 
 /* MODAL */
@@ -203,7 +214,7 @@ input {
 .footer {
   margin: 0;
   margin: 75px 0 0;
-  padding-bottom: 25px;
+  padding-bottom: 55px;
   display: flex;
   justify-content: center;
 }
@@ -242,7 +253,7 @@ i {
     position: relative;
   }
 
-  .about-link {
+  .nav-link {
     position: absolute;
     right: 100px;
   }
@@ -251,8 +262,6 @@ i {
     display: inline;
     margin: 45px 25px
   }
-
-  
 
 }
 

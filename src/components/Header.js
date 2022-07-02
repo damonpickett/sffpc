@@ -18,7 +18,7 @@ function Header({ accounts, setAccounts, modal, setModal }) {
         <div className='header'>
             <nav>
                 <Link className='home' to='/'><h1>Sci-Fi Film Poster Club</h1></Link>
-                <Link className='about-link' to="/about">About</Link>
+                <Link className='nav-link' to="/about">About</Link>
             </nav>
             <div className='header-buttons'>
                 <button onClick={() => {setModal(true)}}>Instructions</button>

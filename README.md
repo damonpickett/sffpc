@@ -51,6 +51,9 @@ OpenSea reads metadata from tokenURI function. THe base uri needs to be for a fo
 
 links for about page:
 
+portfolio https://damonpickett.github.io/portfolio/
+opensea testnet https://testnets.opensea.io/
 portfolio
-opensea testnet
-portfolio
+
+<a href='https://damonpickett.github.io/portfolio/' target='_blank' rel='noreferrer'>
+<a href='https://testnets.opensea.io/' target='_blank' rel='noreferrer'>

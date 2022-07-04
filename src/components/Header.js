@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Header({ accounts, setAccounts, modal, setModal }) {
+function Header({ accounts, setAccounts, setModal }) {
 
     const isConnected = Boolean(accounts[0]);
 

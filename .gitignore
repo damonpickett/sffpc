@@ -28,6 +28,8 @@ coverage
 coverage.json
 typechain
 
+notes.md
+
 #Hardhat files
 cache
 artifacts

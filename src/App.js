@@ -5,7 +5,6 @@ import Modal from './components/Modal';
 import Minter from './components/Minter';
 import About from './components/About';
 import Footer from './components/Footer';
-import spaceOdyssey from './images/2001-330x505.png'
 import './App.css';
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
         </Routes>
         <Footer />
       </div>
-      <div className='background'></div>
     </>
   );
 }

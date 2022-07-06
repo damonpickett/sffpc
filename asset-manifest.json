@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/sffpc/static/css/main.e204f127.css",
+    "main.js": "/sffpc/static/js/main.37635d05.js",
+    "static/js/787.07b8105b.chunk.js": "/sffpc/static/js/787.07b8105b.chunk.js",
+    "static/media/alien330x495.png": "/sffpc/static/media/alien330x495.8c24133f12385a0a8c80.png",
+    "static/media/robocop330x510.png": "/sffpc/static/media/robocop330x510.f9545274dec585124c8c.png",
+    "static/media/2001-330x505.png": "/sffpc/static/media/2001-330x505.93957e3bd17292adfe69.png",
+    "index.html": "/sffpc/index.html",
+    "main.e204f127.css.map": "/sffpc/static/css/main.e204f127.css.map",
+    "main.37635d05.js.map": "/sffpc/static/js/main.37635d05.js.map",
+    "787.07b8105b.chunk.js.map": "/sffpc/static/js/787.07b8105b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e204f127.css",
+    "static/js/main.37635d05.js"
+  ]
+}

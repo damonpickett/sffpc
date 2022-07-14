@@ -14,7 +14,9 @@ const spaceOdysseyAddress = '0x244D105ecb52713B1cB971db7589d617D8FEb5f3'
 
 function Minter({ accounts, setAccounts }) {
 
-    const [mintAmount, setMintAmount] = useState(1);
+    const [mintAmount1, setMintAmount1] = useState(1);
+    const [mintAmount2, setMintAmount2] = useState(1);
+    const [mintAmount3, setMintAmount3] = useState(1);
 
     async function handleSpaceOdysseyMint() {
         if (window.ethereum) {
@@ -26,8 +28,8 @@ function Minter({ accounts, setAccounts }) {
                 signer
             );
             try {
-                const response = await contract.mint(BigNumber.from(mintAmount), {
-                    value: ethers.utils.parseEther((0.01 * mintAmount).toString())
+                const response = await contract.mint(BigNumber.from(mintAmount1), {
+                    value: ethers.utils.parseEther((0.01 * mintAmount1).toString())
                 });
                 console.log('response: ', response);
             } catch (err) {
@@ -46,8 +48,8 @@ function Minter({ accounts, setAccounts }) {
                 signer
             );
             try {
-                const response = await contract.mint(BigNumber.from(mintAmount), {
-                    value: ethers.utils.parseEther((0.01 * mintAmount).toString())
+                const response = await contract.mint(BigNumber.from(mintAmount2), {
+                    value: ethers.utils.parseEther((0.01 * mintAmount2).toString())
                 });
                 console.log('response: ', response);
             } catch (err) {
@@ -66,8 +68,8 @@ function Minter({ accounts, setAccounts }) {
                 signer
             );
             try {
-                const response = await contract.mint(BigNumber.from(mintAmount), {
-                    value: ethers.utils.parseEther((0.01 * mintAmount).toString())
+                const response = await contract.mint(BigNumber.from(mintAmount3), {
+                    value: ethers.utils.parseEther((0.01 * mintAmount3).toString())
                 });
                 console.log('response: ', response);
             } catch (err) {
@@ -81,24 +83,24 @@ function Minter({ accounts, setAccounts }) {
             <Poster
                 src={space}
                 onClick={handleSpaceOdysseyMint} 
-                mintAmount={mintAmount}
-                setMintAmount={setMintAmount}
+                mintAmount={mintAmount1}
+                setMintAmount={setMintAmount1}
                 accounts={accounts} 
                 setAccounts={setAccounts}
                 />
             <Poster 
                 src={alien}
                 onClick={handleAlienMint}
-                mintAmount={mintAmount}
-                setMintAmount={setMintAmount}
+                mintAmount={mintAmount2}
+                setMintAmount={setMintAmount2}
                 accounts={accounts} 
                 setAccounts={setAccounts}
                 />
             <Poster 
                 src={robocop}
                 onClick={handleRobocopMint}
-                mintAmount={mintAmount}
-                setMintAmount={setMintAmount}
+                mintAmount={mintAmount3}
+                setMintAmount={setMintAmount3}
                 accounts={accounts} 
                 setAccounts={setAccounts}
                 />
